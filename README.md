@@ -1,13 +1,12 @@
 ## Node Slackbot Yeoman Generator
 
 ### Installation
-
+If you get access problem just add *sudo* to *npm link*
 ```bash
 git clone https://github.com/MattiasPernhult/generator-slack-bot-node
 cd generator-slack-bot-node
 npm link
 ```
-If you get access problem just add *sudo* to *npm link*
 
 ```bash
 npm install -g yo
