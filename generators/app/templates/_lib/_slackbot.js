@@ -26,7 +26,7 @@ slackbot.prototype._getChannelById = function(channelId)  {
 };
 
 slackbot.prototype._reply = function(originalMessage) {
-  var self = _this;
+  var self = this;
   var channel = self._getChannelById(originalMessage.channel);
   var message = getMessage(originalMessage);
   self.postMessageToChannel(channel.name, message, {
@@ -78,7 +78,7 @@ slackbot.prototype._welcomeMessage = function() {
 };
 
 slackbot.prototype._loadBotUser = function() {
-  var self = _this;
+  var self = this;
   this.user = this.users.filter(function(user) {
     return user.name === self.name;
   })[0];
